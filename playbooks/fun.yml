@@ -6,3 +6,7 @@
   tasks:
     - name: Install SL
       package: name=sl state=present
+    - name: Install Cowsay
+      package: name=cowsay state=present
+    - name: Install lolcat
+      package: name=lolcat state=present

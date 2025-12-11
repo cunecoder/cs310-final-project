@@ -1,15 +1,17 @@
-# /docs/main.md
+# Documentation: /docs/main.md
+- name: Create Users
+  hosts: localhost
+  tasks:
+    - name: Ensure admin account exists
+      ansible.builtin.user:
+        name: admin
+        groups: sudo
+        state: present
 
-- name: Ensure admin account exists
-  ansible.builtin.user:
-    name: admin
-    groups: sudo
-    state: present
-
-- name: Ensure developer accounts exist 
-  ansible.builtin.user:
-    name: "{{ item }}"
-    state: present
-  loop:
-    - dev1
-    - dev2
+    - name: Ensure developer accounts exist 
+      ansible.builtin.user:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - dev1
+        - dev2

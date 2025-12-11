@@ -1,6 +1,7 @@
 # Documentation: /docs/main.md
 - name: Create Users
   hosts: localhost
+  become: true
   tasks:
     - name: Ensure admin account exists
       ansible.builtin.user:

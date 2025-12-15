@@ -16,3 +16,12 @@
       loop:
         - dev1
         - dev2
+
+    - name: Install Grafana Instance and Run it
+      community.docker.docker_container:
+        name: grafana
+        image: grafana/grafana:latest
+        state: started
+        published_ports:
+          - "3000:3000"
+

@@ -4,16 +4,19 @@
 # Description: Report/Reflection for the CS310 Final Project: Declarative Configuration
 
 1. What was the purpose of this project in your own words?
-    - 
+    The purpose of this project was to deploy Craftroasts site and set up accounts and monitoring through grafana, mostly using declarative configuration.
 
 2. Describe each task. What did that task accomplish, how did you accomplish it. Use complete sentences.
-    - 
+   For the e-commerce portion of the project, we deployed Bagisto using a separate playbook instead of including it in the main one. This involved three tasks: we created a directory to store the site files, copied the Docker Compose file for Bagisto into that directory, and then ran the Docker Compose configuration to start the Bagisto service. We also used a separate playbook to complete the remaining tasks, which included installing a Grafana instance and creating two developer accounts and one administrator account.
+
+
+
 
 3. Explain 3 hurdles/misconceptions you encountered whilst working on the project. How did you overcome these hurdles?
-    - 
+    One of the biggest challenges we encountered was initially trying to pull the entire Bagisto repository instead of using a prebuilt image from Docker Hub. We resolved this by going back and actually following the official documentation. Another hurdle was learning how to write playbooks. While we understood the concept in theory, writing them is tougher. We overcame this by reviewing example playbooks. Also, we often ran commands not as sudo which is a really dumb problem that plagued me all semester.
 
 4. Explain 2 things you would do differently if you had to re-do this project?
-    - 
+   I would spend more time getting to know the technology and learning more about it. I would also have liked to spend more time on it in general, but we started late and during finals week.
 
 5. (Extra Credit +2 Pts) What is something that could be improved in this project?
-    - 
+   Maybe providing a few examples of how exactly to do the project and explaining more of how and why the technology does what it does.

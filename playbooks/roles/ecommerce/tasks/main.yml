@@ -1,14 +1,17 @@
-- name: Create ecommerce directory
-  ansible.builtin.file:
-    path: /opt/ecommerce
-    state: directory
+- name: Bagisto Config
+  become: true
+  tasks:  
+    - name: Create ecommerce directory
+      ansible.builtin.file:
+        path: /opt/ecommerce
+        state: directory
 
-- name: Copy Bagisto docker-compose file
-  ansible.builtin.copy:
-    src: docker-compose.yml
-    dest: /opt/ecommerce/docker-compose.yml
+    - name: Copy Bagisto docker-compose file
+      ansible.builtin.copy:
+        src: docker-compose.yml
+        dest: /opt/ecommerce/docker-compose.yml
 
-- name: Start Bagisto e-commerce site
-  community.docker.docker_compose_v2:
-    project_src: /opt/ecommerce
-    state: present
+    - name: Start Bagisto e-commerce site
+      community.docker.docker_compose_v2:
+        project_src: /opt/ecommerce
+        state: present

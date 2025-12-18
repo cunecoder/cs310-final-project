@@ -1,6 +1,6 @@
 # Documentation: /docs/main.md
 - name: Create Users
-  hosts: localhost
+  hosts: all
   become: true
   roles:
     - ecommerce

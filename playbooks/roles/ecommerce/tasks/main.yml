@@ -9,6 +9,6 @@
     dest: /opt/ecommerce/docker-compose.yml
 
 - name: Start Bagisto e-commerce site
-  community.docker.docker_compose:
+  community.docker.docker_compose_v2:
     project_src: /opt/ecommerce
     state: present

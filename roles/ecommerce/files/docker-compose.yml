@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  bagisto:
+    image: bagisto/bagisto
+    container_name: bagisto
+    restart: always
+    ports:
+      - "8000:80"
+    depends_on:
+      - mysql
+    environment:
+      DB_HOST: mysql
+      DB_DATABASE: bagisto
+      DB_USERNAME: bagisto
+      DB_PASSWORD: bagisto
+    volumes:
+      - bagisto-data:/var/www/html
+
+  mysql:
+    image: mysql:8.0
+    container_name: bagisto-mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: bagisto
+      MYSQL_USER: bagisto
+      MYSQL_PASSWORD: bagisto
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  bagisto-data:
+  mysql-data:

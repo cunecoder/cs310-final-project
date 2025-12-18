@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   bagisto:
-    build: ./bagisto
+    image: ghcr.io/bagisto/bagisto:latest
     container_name: bagisto
     ports:
       - "8000:80"

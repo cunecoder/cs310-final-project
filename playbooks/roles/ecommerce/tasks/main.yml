@@ -8,11 +8,11 @@
     src: docker-compose.yml
     dest: /opt/ecommerce/docker-compose.yml
 
-- name: Clone Bagisto repo
+- name: Clone Bagisto repository
   ansible.builtin.git:
     repo: https://github.com/bagisto/bagisto.git
     dest: /opt/ecommerce/bagisto
-    version: main
+    version: master
 
 - name: Start Bagisto e-commerce site
   community.docker.docker_compose_v2:

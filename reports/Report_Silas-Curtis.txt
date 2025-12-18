@@ -1,0 +1,19 @@
+# Name: Report_Silas-Curtis.txt
+# Author: Silas Curtis
+# Created: 12/18/2025
+# Description: Report/Reflection for the CS310 Final Project: Declarative Configuration
+
+1. What was the purpose of this project in your own words?
+    - 
+
+2. Describe each task. What did that task accomplish, how did you accomplish it. Use complete sentences.
+    - 
+
+3. Explain 3 hurdles/misconceptions you encountered whilst working on the project. How did you overcome these hurdles?
+    - 
+
+4. Explain 2 things you would do differently if you had to re-do this project?
+    - 
+
+5. (Extra Credit +2 Pts) What is something that could be improved in this project?
+    - 

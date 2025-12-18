@@ -1,0 +1,32 @@
+# Name: Report_David-Marin.txt
+# Author: David Marin
+# Created: 12/18/2025
+# Description: Report/Reflection for the CS310 Final Project: Declarative Configuration
+
+1. What was the purpose of this project in your own words?
+    - The purpose of this project was to deploy CraftRoast's site on our server and monitor it using a grafana instance.
+      We also added 1 admin account and 2 dev accounts for CraftRoast.
+
+2. Describe each task. What did that task accomplish, how did you accomplish it. Use complete sentences.
+    - (I am assuming this means the 4 tasks for Project 4 because there was only one full assignment for Project 4).
+      For the digital e-commerce site, we installed Bagisto using a separate playbook than the main one. We had 3 tasks that created
+      a directory for the site, copied the docker-compose file for Bagisto, and finally one that ran the Bagisto site.
+      We have a playbook that does each of the other tasks, installing a grafana instance, and setting up the 2 dev accounts
+      and the 1 admin account.
+
+3. Explain 3 hurdles/misconceptions you encountered whilst working on the project. How did you overcome these hurdles?
+    - One massive hurdle was that we were trying to pull the whole bagisto repo down instead of using docker hub to install an image of bagisto.
+      We fixed it by just following the documentation as we should have from the beginning.
+      Another hurdle was at the beginning, just learning more about playbooks. We knew the concept on paper but writing them had a small learning
+      curve. Honestly, it wasn't that bad to learn how to write them. We just looked at some examples, such as yours (Ian's).
+      One last thing, we kept on forgetting to run sudo on some commands so that held us back until we figured out why by researching. Also, when
+      we ran into the error once, it made it easier to detect the same error again later.
+
+4. Explain 2 things you would do differently if you had to re-do this project?
+    - I would actually read more of the documentation instead of trying to do things a different way. I would also explore the documentation and
+      add more variation/customization to the server so that I can learn more about declarative configuration instead of trying to just get it done.
+
+5. (Extra Credit +2 Pts) What is something that could be improved in this project?
+    - Something that could be improved is helping us with troubleshooting, or some more guidance on that. It was sometimes hard
+      to know what we were doing wrong when we got errors. I think at least a lecture or two on that would be very useful
+      because a lot of programming will be troubleshooting.
